@@ -15,11 +15,11 @@ letters.map do |l|
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css?family=PT+Serif:400,400i,700,700i" rel="stylesheet">
-  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="/seneca/style.css">
 </head>
 <body>
   <header>
-    <h1><a href="/">Моральні листи до Луцілія</a></h1>
+    <h1><a href="/seneca/">Моральні листи до Луцілія</a></h1>
     <p>Луцій Анней Сенека</p>
   </header>
 
@@ -30,9 +30,9 @@ letters.map do |l|
   </main>
 
   <footer>
-    <a href='/'>Зміст</a>
+    <a href='/seneca/'>Зміст</a>
     &nbsp;&nbsp;
-    <a href='/expl.html'>Примітки</a>
+    <a href='/seneca/expl.html'>Примітки</a>
   </footer>
 </body>
 </html>
