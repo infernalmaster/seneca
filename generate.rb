@@ -7,6 +7,7 @@ letters.map do |l|
   name = l.split('"')[1]
   content = "<h2>#{l.split('<h2>')[1]}"
     .gsub(/\((\d+)\)/, '<sup>\1</sup>')
+    .gsub(/(\s+)/, ' ')
     .gsub(/(\s-\s)/, '&nbsp;— ')
     .gsub(/(\s--\s)/, '&nbsp;— ')
     .gsub(/(--)/, '—')
