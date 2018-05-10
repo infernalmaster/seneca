@@ -4,7 +4,7 @@ letters = text.split('<p>&nbsp;')
 letters.shift
 
 letters.map do |l|
-  name = l.split('"')[1]
+  name = l.split('"')[1].to_i
   content = "<h2>#{l.split('<h2>')[1]}"
     .gsub(/\((\d+)\)/, '<sup>\1</sup>')
     .gsub(/(\s+)/, ' ')
@@ -31,9 +31,13 @@ letters.map do |l|
   </main>
 
   <footer>
+    <a href='/seneca/#{name - 1}'>←</a>
+    &nbsp;&nbsp;
     <a href='/seneca/'>Зміст</a>
     &nbsp;&nbsp;
     <a href='/seneca/expl.html'>Примітки</a>
+    &nbsp;&nbsp;
+    <a href='/seneca/#{name + 1}'>→</a>
   </footer>
 </body>
 </html>
